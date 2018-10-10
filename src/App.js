@@ -5,7 +5,7 @@ import React from 'react';
 
 // Set up your project with create-react-app.
 import {
-  BrowserRouter,
+  HashRouter,
   Route,
   Switch
 } from 'react-router-dom';
@@ -28,7 +28,7 @@ import './App.css';
   // Exact instructs the router to render the component only when the path matches the URL exactly.
   // If none of the paths match, a Component prop is used to render 404-like error
 const App = () => (
-    <BrowserRouter>
+    <HashRouter>
       <div className="container">
         <Switch>
           <Route exact path="/" render={ () => (<Search />)} />
@@ -40,7 +40,7 @@ const App = () => (
         <nav/ >
       </div>
 
-    </BrowserRouter>
+    </HashRouter>
 );
 
 export default App;
